@@ -456,3 +456,52 @@ header nav a {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(199, 125, 255, 0.4);
 }
+
+/* F.A.Q Section Styles */
+.faq {
+  background-color: #f5f5f5;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.faq h2 {
+  color: #1a1a1a;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+.faq > div {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq > div > div {
+  flex: 1;
+  max-width: 500px;
+}
+
+.faq > div > div > div {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.faq h3 {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.faq > div > div > div:nth-child(even) {
+  color: #6b6b6b;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
