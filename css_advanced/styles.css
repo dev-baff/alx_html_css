@@ -87,6 +87,11 @@ header nav a {
     box-shadow: 0 4px 4px 0 #000000;
 }
 
+.intro button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(199, 125, 255, 0.4);
+}
+
 .learn {
     color: white;
     font-weight: 100;
@@ -379,4 +384,75 @@ header nav a {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Free Membership Section Styles */
+.membership {
+  background-color: #0a1628;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.membership h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.membership h2::before {
+  content: "Free";
+  color: #c77dff;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.membership > div {
+  display: inline-block;
+  width: 200px;
+  margin: 0 30px 40px 30px;
+  vertical-align: top;
+}
+
+.membership img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  filter: invert(73%) sepia(56%) saturate(7490%) hue-rotate(235deg) brightness(103%) contrast(101%);
+
+}
+
+
+.membership h3 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.membership p {
+  color: #8b92a8;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.membership button {
+  background: linear-gradient(90deg, #c77dff 0%, #9d4edd 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 35px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.membership button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(199, 125, 255, 0.4);
 }
