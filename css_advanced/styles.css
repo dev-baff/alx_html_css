@@ -156,7 +156,7 @@ header nav a {
 
 
 .hero {
-    background-image: url(Object.jpg), radial-gradient(circle at center, rgba(7, 22, 41, 0) 0%, #000000 100%);
+    background-image: url(images/Object.jpg), radial-gradient(circle at center, rgba(7, 22, 41, 0) 0%, #000000 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
