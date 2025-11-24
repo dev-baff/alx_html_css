@@ -39,34 +39,36 @@ Your project contains the following files and folders:
 ```
 📦css_advanced
  ┣ 📂fonts
- ┃ ┣ SIL Open Font License.txt
- ┃ ┣ SourceSansPro-Black.otf
- ┃ ┣ SourceSansPro-BlackIt.otf
- ┃ ┣ SourceSansPro-Bold.otf
- ┃ ┣ SourceSansPro-BoldIt.otf
- ┃ ┣ SourceSansPro-ExtraLight.otf
- ┃ ┣ SourceSansPro-ExtraLightIt.otf
- ┃ ┣ SourceSansPro-It.otf
- ┃ ┣ SourceSansPro-Light.otf
- ┃ ┣ SourceSansPro-LightIt.otf
- ┃ ┣ SourceSansPro-Regular.otf
- ┃ ┣ SourceSansPro-Semibold.otf
- ┃ ┗ SourceSansPro-SemiboldIt.otf
- ┣ avatar1.jpg
- ┣ avatar2.jpg
- ┣ avatar3.jpg
- ┣ avatar4.jpg
- ┣ avatar5.jpg
- ┣ index.html
- ┣ logo.svg
- ┣ logo1.svg
- ┣ Object.jpg
- ┣ README.md
- ┣ styles.css
- ┣ video1.jpg
- ┣ video2.jpg
- ┣ video3.jpg
- ┗ video4.jpg
+ ┃ ┣ 📜SIL Open Font License.txt
+ ┃ ┣ 📜SourceSansPro-Black.otf
+ ┃ ┣ 📜SourceSansPro-BlackIt.otf
+ ┃ ┣ 📜SourceSansPro-Bold.otf
+ ┃ ┣ 📜SourceSansPro-BoldIt.otf
+ ┃ ┣ 📜SourceSansPro-ExtraLight.otf
+ ┃ ┣ 📜SourceSansPro-ExtraLightIt.otf
+ ┃ ┣ 📜SourceSansPro-It.otf
+ ┃ ┣ 📜SourceSansPro-Light.otf
+ ┃ ┣ 📜SourceSansPro-LightIt.otf
+ ┃ ┣ 📜SourceSansPro-Regular.otf
+ ┃ ┣ 📜SourceSansPro-Semibold.otf
+ ┃ ┗ 📜SourceSansPro-SemiboldIt.otf
+ ┣ 📂images
+ ┃ ┣ 📜avatar1.jpg
+ ┃ ┣ 📜avatar2.jpg
+ ┃ ┣ 📜avatar3.jpg
+ ┃ ┣ 📜avatar4.jpg
+ ┃ ┣ 📜avatar5.jpg
+ ┃ ┣ 📜Object.jpg
+ ┃ ┣ 📜video1.jpg
+ ┃ ┣ 📜video2.jpg
+ ┃ ┣ 📜video3.jpg
+ ┃ ┗ 📜video4.jpg
+ ┣ 📂logos
+ ┃ ┣ 📜logo1.svg
+ ┃ ┗ 📜logo2.svg
+ ┣ 📜index.html
+ ┣ 📜README.md
+ ┗ 📜styles.css
 ```
 
 ---
