@@ -19,20 +19,39 @@
     font-weight: bold;
 }
 
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'holberton_school-icon' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Body Styles */
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #ffffff;
   line-height: 1.6;
-  background: url('images/headphones_hero_1.jpg') no-repeat center top;
-  background-size: cover;
-  min-height: 100vh;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 /* ===== Header Styles ===== */
@@ -44,7 +63,10 @@ body {
   align-items: center;
   padding: 28px 0;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
 }
 
@@ -87,11 +109,19 @@ body {
 
 /* ===== Hero Section Styles ===== */
 .hero-section {
-  max-width: 637px;
+  background: url('images/headphones_hero_1.jpg') no-repeat center top;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+  position: relative;
 }
 
 .hero-title {
@@ -145,6 +175,66 @@ body {
   padding: 0 20px;
 }
 
+/* ===== What We Do Section ===== */
+.whatwedo {
+  background-color: #ffffff;
+  color: #071629;
+  padding: 110px 20px 130px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.whatwedo > p {
+  width: 100%;
+  max-width: 637px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto 96px;
+  font-weight: 400;
+  display: block;
+}
+
+/* Individual Service Styles */
+.service1,
+.service2,
+.service3,
+.service4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 207px;
+  margin: 0 32.5px;
+  vertical-align: top;
+}
+
+/* Icon Styles */
+.service1 i,
+.service2 i,
+.service3 i,
+.service4 i {
+  font-size: 94px;
+  color: #FF6565;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 1;
+}
+
+/* Service Text */
+.service1 p,
+.service2 p,
+.service3 p,
+.service4 p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #071629;
+  margin: 0;
+  padding: 0 5px;
+}
+
 /* ===== Tablet Responsive - 768px and below ===== */
 @media (max-width: 768px) {
   .header {
@@ -161,7 +251,7 @@ body {
 
   .hero-title {
     font-size: 28px;
-    margin-top: 280px;
+    margin-top: 0;
     padding: 0 40px;
   }
 
@@ -175,6 +265,33 @@ body {
     margin-top: 55px;
     margin-bottom: 100px;
     padding: 0 40px;
+  }
+
+  /* What We Do - Tablet */
+  .whatwedo {
+    padding: 90px 30px 100px;
+  }
+
+  .whatwedo > p {
+    font-size: 16px;
+    margin-bottom: 70px;
+    padding: 0 20px;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    width: 207px;
+    margin: 0 26px 65px;
+  }
+
+  .service1 i,
+  .service2 i,
+  .service3 i,
+  .service4 i {
+    font-size: 85px;
+    margin-bottom: 18px;
   }
 }
 
@@ -215,7 +332,7 @@ body {
 
   .hero-title {
     font-size: 32px;
-    margin-top: 80px;
+    margin-top: 0;
     padding: 0 30px;
     line-height: 1.3;
   }
@@ -239,5 +356,47 @@ body {
     margin-top: 40px;
     margin-bottom: 60px;
     padding: 0 30px;
+  }
+
+  /* What We Do - Mobile */
+  .whatwedo {
+    padding: 60px 20px 65px;
+    flex-direction: column;
+  }
+
+  .whatwedo > p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 65px;
+    padding: 0 10px;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    width: 100%;
+    max-width: 207px;
+    margin: 0 auto 60px;
+  }
+
+  .service4 {
+    margin-bottom: 0;
+  }
+
+  .service1 i,
+  .service2 i,
+  .service3 i,
+  .service4 i {
+    font-size: 94px;
+    margin-bottom: 18px;
+  }
+
+  .service1 p,
+  .service2 p,
+  .service3 p,
+  .service4 p {
+    font-size: 14px;
+    line-height: 26px;
   }
 }
