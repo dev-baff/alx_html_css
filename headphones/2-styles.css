@@ -1,0 +1,547 @@
+/* ===== Reset and Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font Face Declarations */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'holberton_school-icon' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header Styles ===== */
+.header {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 161px;
+  height: auto;
+  margin-left: 0;
+}
+
+/* ===== Navigation Styles ===== */
+.navbar {
+  margin-right: 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 41px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #FF6565;
+}
+
+/* ===== Hero Section Styles ===== */
+.hero-section {
+  background: url('images/headphones_hero_1.jpg') no-repeat center top;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 312px;
+  margin-bottom: 0;
+  max-width: 637px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 38px;
+}
+
+/* ===== Button Styles ===== */
+.cta,
+.btn-primary {
+  background-color: #FF6565;
+  color: #ffffff;
+  border: none;
+  padding: 13px 31px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 22px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
+}
+
+.cta:hover,
+.btn-primary:hover,
+.cta:active,
+.btn-primary:active {
+  opacity: 0.9;
+}
+
+/* Hero Description */
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 65px;
+  margin-bottom: 115px;
+  max-width: 637px;
+  padding: 0 20px;
+}
+
+/* ===== What We Do Section ===== */
+.whatwedo {
+  background-color: #ffffff;
+  color: #071629;
+  padding: 110px 20px 130px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.whatwedo > p {
+  width: 100%;
+  max-width: 637px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto 96px;
+  font-weight: 400;
+  display: block;
+}
+
+/* Individual Service Styles */
+.service1,
+.service2,
+.service3,
+.service4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 207px;
+  margin: 0 32.5px;
+  vertical-align: top;
+}
+
+/* Icon Styles */
+.service1 i,
+.service2 i,
+.service3 i,
+.service4 i {
+  font-size: 94px;
+  color: #FF6565;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 1;
+}
+
+/* Service Text */
+.service1 p,
+.service2 p,
+.service3 p,
+.service4 p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #071629;
+  margin: 0;
+  padding: 0 5px;
+}
+
+/* ===== Tablet Responsive - 768px and below ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 28px 30px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .nav-list {
+    gap: 35px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    margin-top: 0;
+    padding: 0 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    padding: 0 40px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    margin-top: 55px;
+    margin-bottom: 100px;
+    padding: 0 40px;
+  }
+
+  /* What We Do - Tablet */
+  .whatwedo {
+    padding: 90px 30px 100px;
+  }
+
+  .whatwedo > p {
+    font-size: 16px;
+    margin-bottom: 70px;
+    padding: 0 20px;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    width: 207px;
+    margin: 0 26px 65px;
+  }
+
+  .service1 i,
+  .service2 i,
+  .service3 i,
+  .service4 i {
+    font-size: 85px;
+    margin-bottom: 18px;
+  }
+}
+
+/* ===== Mobile Responsive - 480px and below ===== */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    padding: 30px 20px 0;
+    gap: 0;
+  }
+
+  .logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    margin-top: 0;
+    padding: 0 30px;
+    line-height: 1.3;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    padding: 0 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .cta,
+  .btn-primary {
+    padding: 13px 19px;
+    font-size: 14px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+
+  /* What We Do - Mobile */
+  .whatwedo {
+    padding: 60px 20px 65px;
+    flex-direction: column;
+  }
+
+  .whatwedo > p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 65px;
+    padding: 0 10px;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    width: 100%;
+    max-width: 207px;
+    margin: 0 auto 60px;
+  }
+
+  .service4 {
+    margin-bottom: 0;
+  }
+
+  .service1 i,
+  .service2 i,
+  .service3 i,
+  .service4 i {
+    font-size: 94px;
+    margin-bottom: 18px;
+  }
+
+  .service1 p,
+  .service2 p,
+  .service3 p,
+  .service4 p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+/* ===== Our Results Section ===== */
+.ourresults {
+  background: url('images/headphones_hero_2.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 110px 20px 130px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.ourresults::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(7, 22, 41, 0.7);
+  z-index: 1;
+}
+
+.ourresults > * {
+  position: relative;
+  z-index: 2;
+}
+
+.ourresults > p {
+  width: 100%;
+  max-width: 637px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto 96px;
+  font-weight: 400;
+}
+
+/* Results Container */
+.results {
+  display: inline-block;
+  width: 190px;
+  margin: 0 42px;
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+}
+
+.results img {
+  width: 190px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.results p:first-of-type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 46px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  z-index: 3;
+}
+
+.results p:last-of-type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+  z-index: 3;
+  line-height: 26px;
+}
+
+/* ===== Tablet Responsive for Our Results - 768px and below ===== */
+@media (max-width: 768px) {
+  .ourresults {
+    padding: 90px 30px 100px;
+  }
+
+  .ourresults > p {
+    font-size: 16px;
+    margin-bottom: 70px;
+    padding: 0 20px;
+  }
+
+  .results {
+    width: 170px;
+    margin: 0 30px 60px;
+  }
+
+  .results img {
+    width: 170px;
+  }
+
+  .results p:first-of-type {
+    font-size: 42px;
+  }
+
+  .results p:last-of-type {
+    font-size: 13px;
+  }
+}
+
+/* ===== Mobile Responsive for Our Results - 480px and below ===== */
+@media (max-width: 480px) {
+  .ourresults {
+    padding: 60px 20px 65px;
+  }
+
+  .ourresults > p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 65px;
+    padding: 0 10px;
+  }
+
+  .results {
+    display: block;
+    width: 190px;
+    margin: 0 auto 60px;
+  }
+
+  .results:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .results img {
+    width: 190px;
+  }
+
+  .results p:first-of-type {
+    font-size: 46px;
+  }
+
+  .results p:last-of-type {
+    font-size: 14px;
+  }
+}
